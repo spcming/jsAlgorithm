@@ -40,7 +40,7 @@
 
 // 输入:
 // s = "mississippi"
-// p = "mis*is*p*."
+// p = "mis*is*p*." 
 // 输出: false
 
 var isMatch = function(s, p) {
