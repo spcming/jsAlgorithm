@@ -31,4 +31,3 @@ var isMatch = function(s, p) {
     }
     return dp[slen][plen]
 };
-console.log(isMatch('aa','a'))
