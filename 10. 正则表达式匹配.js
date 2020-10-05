@@ -72,4 +72,4 @@ var isMatch = function(s, p) {
     }
     return dp[sLen][pLen]
 };
-console.log(isMatch('ab','.*c'))
+console.log(isMatch('aa','a'))
