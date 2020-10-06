@@ -11,12 +11,14 @@
  * @return {ListNode}
  */
 var getKthFromEnd = function(head, k) {
-    let map = new Map;
-    let index = 1;
-    while(head!=null){
-        map.set(index,head)
-        index++
-        head = head.next
+    let prev=head,
+        end=head;
+    for(let i=0;i<k-1;i++){
+        end=end.next;
     }
-    return map.get(index-k+1)
+    while(end.next=null){
+        end = end.next;
+        prev = prev.next;
+    }
+    return prev
 };  
