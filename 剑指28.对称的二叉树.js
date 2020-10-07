@@ -13,7 +13,7 @@ var isSymmetric = function(root) {
     // 判断两个数是否相等
     function isSame(A,B){
         if(A && B){
-            let rootSame = A.root === B.root,
+            let rootSame = A.val === B.root,
                 leftSame = isSame(A.left, B.right),
                 rightSame = isSame(A.right, B.left);
             return rootSame && leftSame && rightSame
