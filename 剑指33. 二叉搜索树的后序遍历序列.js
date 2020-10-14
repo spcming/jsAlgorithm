@@ -3,19 +3,18 @@
  * @return {boolean}
  */
 var verifyPostorder = function(postorder) {
-    let prev = 0,
-        next = 2;
-    while(next<postorderlength){
-        let left = postorder[prev],
-            root = postorder[next],
-            right = postorder[prev + 1]
-        if(!(left < root && root < right)){
+    let stack = [],
+        root = Number.MAX_VALUE;
+    stack.push(postorder[postorder.length - 1]);
+    for(let i = postorder.length - 2; i >= 0; i--){
+        let cur = postorder[i]
+        if(cur>root){
             return false
         }
-        prev +=2
-        next +=2
+        while(stack.length && postorder[i] < stack[stack.length - 1]){
+            root = stack.pop()
+        }
+        stack.push(cur)
     }
     return true
 };
-
-verifyPostorder([4, 8, 6, 12, 16, 14, 10])
