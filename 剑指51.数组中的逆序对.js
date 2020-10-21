@@ -3,7 +3,7 @@
  * @return {number}
  */
 var reversePairs = function(nums) {
-    let number = 0
+    let number = 0 
     function mergeSort(nums){
         if(nums.length==1){
             return nums
@@ -25,10 +25,10 @@ var reversePairs = function(nums) {
             } else if(rightIndex == right.length){
                 res.push(left[leftIndex])
                 leftIndex ++ 
-            }else if(left[leftIndex] <= right[rightIndex]){
+            }else if (left[leftIndex] <= right[rightIndex]) {
                 res.push(left[leftIndex])
                 leftIndex ++
-            }else if(left[leftIndex] > right[rightIndex]){
+            }else if (left[leftIndex] > right[rightIndex]) {
                 res.push(right[rightIndex])
                 rightIndex ++
                 number += left.length - leftIndex;
