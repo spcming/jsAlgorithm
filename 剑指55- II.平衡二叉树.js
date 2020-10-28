@@ -23,7 +23,7 @@ var isBalanced = function(root) {
         }
     }
     res = fn(root)
-    if(root != -1) return true
+    if(res != -1) return true
     else return false
 };
 function TreeNode(val) {
