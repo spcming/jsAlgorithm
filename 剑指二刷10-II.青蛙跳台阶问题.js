@@ -11,6 +11,6 @@ var numWays = function(n) {
         [a, b] = [a + b, a]
         a = a % 1000000007
         b = b % 1000000007
-    }  
+    }
     return a
 };
