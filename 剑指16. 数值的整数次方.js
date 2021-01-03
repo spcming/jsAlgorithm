@@ -17,4 +17,4 @@ var myPow = function(x, n) {
     }
     return isNegative ? 1/res : res
 };
-console.log(myPow(1500,1))
+console.log(myPow(34.00515,3))
