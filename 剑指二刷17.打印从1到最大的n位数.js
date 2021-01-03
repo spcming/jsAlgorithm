@@ -13,7 +13,7 @@ var printNumbers = function(n) {
         for(let i = 0; i < 10; i++){
             if(x==0 && i == 0){
                 num[x] = ''
-            }else if(num[x-1]=='' && i == 0){
+            }else if(num[x-1]==='' && i == 0){
                 num[x] = ''
             }else{
                 num[x] = i
@@ -25,4 +25,3 @@ var printNumbers = function(n) {
     res.shift()
     return res
 };
-console.log(printNumbers(3))
