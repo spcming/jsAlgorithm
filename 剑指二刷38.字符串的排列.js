@@ -8,7 +8,6 @@ var permutation = function(s) {
         let resArr = []
         for(let i = 0; i < length; i++){
             let arrLen = arr[0].length
-            // console.log(arrLen)
             for(let j = 0; j <= arrLen; j++){
                 let item = arr[i].slice(0,j)+char+arr[i].slice(j)
                 if(map[item]){
