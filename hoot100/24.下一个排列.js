@@ -54,6 +54,3 @@ function sort(arr, i, j){
     swap(arr, i, j);
     quickSort(arr, i + 1, arr.length - 1)
 }
-
-
-console.log(nextPermutation([1,3,2]))
